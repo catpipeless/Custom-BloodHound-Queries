@@ -13,6 +13,6 @@
     "https://raw.githubusercontent.com/trustedsec/CrackHound/main/customqueries.json",
     "https://raw.githubusercontent.com/aress31/bloodhound-utils/main/customqueries.json",
     "https://raw.githubusercontent.com/ThePorgs/Exegol-images/main/sources/bloodhound/customqueries.json",
-    "https://raw.githubusercontent.com/catpipeless/Bloodhound-CustomQueries/main/customqueries.json"
+    "https://raw.githubusercontent.com/catpipeless/Custom-BloodHound-Queries/main/customqueries.json"
   ]
 }
