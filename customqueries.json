@@ -166,6 +166,28 @@
 			]
 		},
 		{
+			"name": "Shortest Path from Owned to HVT",
+			"category": "Azure - Paths",
+			"queryList": [
+				{
+					"final": true,
+					"query": "MATCH (n:AZRole WHERE n.displayname =~ '(?i)Global Administrator|User Administrator|Cloud Application Administrator|Authentication Policy Administrator|Exchange Administrator|Helpdesk Administrator|PRIVILEGED AUTHENTICATION ADMINISTRATOR'), p=shortestPath(({owned: true})-[r*1..]->(n)) RETURN p",
+					"allowCollapse": true
+				}
+			]
+		},
+	  	{
+			"name": "All Paths from Owned to HVT",
+			"category": "Azure - Paths",
+			"queryList": [
+				{
+					"final": true,
+					"query": "MATCH (n:AZRole WHERE n.displayname =~ '(?i)Global Administrator|User Administrator|Cloud Application Administrator|Authentication Policy Administrator|Exchange Administrator|Helpdesk Administrator|PRIVILEGED AUTHENTICATION ADMINISTRATOR'), p=(({owned: true})-[r*1..]->(n)) RETURN p",
+					"allowCollapse": true
+				}
+			]
+		},
+		{
 			"name": "Find all Paths to Azure VMs",
 			"category": "Azure - Paths",
 			"queryList": [
